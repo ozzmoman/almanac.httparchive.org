@@ -10,23 +10,23 @@
 {% block web_almanac_logo %}
   <span class="wa">Web Almanac</span>
   <span class="line-group">
-    <span class="pre">By</span>
-    <span class="ha">HTTP Archive</span>
+    <span class="pre">بوسیله</span>
+    <span class="ha">HTTP آرشیو</span>
   </span>
 {% endblock %}
 
 {% block intro_title %}Web Almanac{% endblock %}
-{% block intro_sub_title %}HTTP Archive&#8217;s annual<br> <b>state of the web</b> report{% endblock %}
+{% block intro_sub_title %}سالانه بایگانی HTTP<br> <b>وضعیت وب</b> گزارش{% endblock %}
 
 {% block mission %}
 <p>
-Our mission is to combine the raw stats and trends of the HTTP Archive with the expertise of the web community. The Web Almanac is a comprehensive report on the state of the web, backed by real data and trusted web experts. The {{ year }} edition is comprised of {{ supported_chapters | length }} chapters spanning aspects of page content, user experience, publishing, and distribution.
+  ماموریت ما ترکیب آمار و روندهای خام آرشیو HTTP با تخصص جامعه وب است. وب سالنامه یک گزارش جامع از وضعیت وب است که توسط داده های واقعی و کارشناسان وب مورد اعتماد پشتیبانی می شود. نسخه {{ year }} از {{ supported_chapters | length }} فصل هایی که جنبه های محتوای صفحه، تجربه کاربر، انتشار و توزیع را در بر می گیرد.
 </p>
 {% endblock %}
 
-{% block read_last_years_almanac %}Read the {{ year | int - 1 }} Web Almanac{% endblock %}
+{% block read_last_years_almanac %}را بخوانید {{ year | int - 1 }} Web Almanac{% endblock %}
 
-{% block http_archive_link %}HTTP Archive home{% endblock %}
+{% block http_archive_link %}خانه بایگانی HTTP{% endblock %}
 
 {% block page_navigation %}Page navigation{% endblock %}
 

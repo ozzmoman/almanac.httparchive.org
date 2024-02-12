@@ -1,11 +1,11 @@
 {% extends "base/contributors.html" %}
 
-{% block title %}2019 Contributors | The Web Almanac by HTTP Archive{% endblock %}
+{% block title %}مشارکت کنندگان 2019 | The Web Almanac توسط HTTP Archive{% endblock %}
 
-{% block description %}The {{ config.contributors.items() | length }} people who contributed to the 2019 Web Almanac as Analysts, Authors, Brainstormers, Designers, Developers, Editors, Reviewers and Translators.{% endblock %}
+{% block description %}{{ config.contributors.items() | length }} افرادی که به‌عنوان تحلیل‌گر، نویسنده، طوفان فکری، طراح، توسعه‌دهنده، ویراستار، داور و مترجم در سالنامه وب ۲۰۱۹ مشارکت داشته‌اند.{% endblock %}
 
-{% block filter_by_team %}Filter by team: <span id="filtered-contributors">{{ self.contributors() }}</span><span id="contributors-total-text" class="hidden"> of <span id="contributors-total">{{ config.contributors.items() | length }}</span></span> contributors.{% endblock %}
-{% block filter_by %}Filter by{% endblock %}
+{% block filter_by_team %}فیلتر بر اساس تیم: <span id="filtered-contributors">{{ self.contributors() }}</span><span id="contributors-total-text" class="hidden"> of <span id="contributors-total">{{ config.contributors.items() | length }}</span></span> مشارکت کنندگان.{% endblock %}
+{% block filter_by %}فیلتر بوسیله{% endblock %}
 
-{% block join_the_team_title%}Join the Web Almanac team{% endblock %}
-{% block join_the_team_text%}Join the team!{% endblock %}
+{% block join_the_team_title%}به تیم سالنامه وب بپیوندید{% endblock %}
+{% block join_the_team_text%}به تیم بپیوندید!{% endblock %}

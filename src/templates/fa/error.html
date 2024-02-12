@@ -4,19 +4,19 @@
 
 {%
   set localizedStatusCode = {
-    400: "Bad Request",
-    404: "Page Not Found",
-    500: "Internal Server Error",
-    502: "Temporary Server Error"
+    400: "درخواست بد",
+    404: "صفحه پیدا نشد",
+    500: "خطای داخلی سرور",
+    502: "خطای موقت سرور"
   }
 %}
-{% macro expandedTitle(errorTitle) %}Error: {{ errorTitle }}{% endmacro %}
+{% macro expandedTitle(errorTitle) %}خطا: {{ errorTitle }}{% endmacro %}
 {%
   set localizedErrorMessage = {
-    "Unsupported year requested": "Unsupported year requested",
-    "Unsupported chapter requested": "Unsupported chapter requested",
-    "Unsupported language requested": "Unsupported language requested",
-    "Not Found": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again."
+    "Unsupported year requested": "سال پشتیبانی نشده درخواست شد",
+    "Unsupported chapter requested": "فصل پشتیبانی نشده درخواست شد",
+    "Unsupported language requested": "زبان پشتیبانی نشده درخواست شده است",
+    "Not Found": "URL درخواستی در سرور یافت نشد. اگر URL را به صورت دستی وارد کرده اید، لطفاً املای خود را بررسی کنید و دوباره امتحان کنید."
   }
 %}
 {% macro expandedErrorMessage(errorCode, errorDescription, errorMessage) %}
